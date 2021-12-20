@@ -11,7 +11,7 @@ root.geometry("555x555")
 root.minsize(555,555)
 root.maxsize(555,555)
 
-root.wm_iconbitmap("C:\\Users\\91762\\Desktop\\VS Code\\Projects\\qrgen\\icon.ico")
+root.wm_iconbitmap(r"icon.ico")
 root.title("QR Code Generator--- By Deepraj")
 
 #@ Defining Global Variables
@@ -58,7 +58,7 @@ name=Label(f1,text="Paste your Link Here ⬇",font="Consolas 18",fg="#EE601D")
 name.pack(padx=4,pady=1,ipadx=20,fill=X)
 f1.pack(padx=4,pady=1,ipadx=20,fill=X)
 
-screen=Entry(root,textvar=scvalue,font="Consolas 16",bg="#B5BABA",relief=SUNKEN)
+screen=Entry(root,textvariable=scvalue,font="Consolas 16",bg="#B5BABA",relief=SUNKEN)
 screen.pack(side=TOP,fill=X,padx=20,pady=10)
 
 f2=Frame(root,bg="#B5BABA", height=325,width=325)
